@@ -1,0 +1,550 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+/* header section */
+.head-container{
+    height: 100vh;
+    width: 100%;
+}
+.head-main-logo{
+    width: 100%;
+    height: 360px;
+    background-image: url("bg-header-desktop.png");
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-logo-img{
+    height: 140px;
+    width: 140px;
+}
+/* hero section containers */
+.hero-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.hero-paragrap-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.doundode-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/* end hero section containers */
+.wrap-paragrap{
+    width: 700px;
+}
+.main-heading{
+    font-size:2.7rem;
+}
+.main-heading-paragrap{
+    font-size: 1.25rem;
+    color:rgba(17, 16, 16, 0.336);
+}
+.hero-btn{
+    margin:5px 10px;
+    padding:15px 80px;
+    border:none;
+    outline:none;
+    border-radius:22px;
+    background-color: var(--StrongCyan);
+    color:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid var(--GrayishBlue);
+    cursor: pointer;
+}
+.hero-btn2{
+    margin:5px 10px;
+    padding:15px 80px;
+    border:none;
+    outline:none;
+    border-radius:22px;
+    background-color: var(--LightBlue);
+    color:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid var(--GrayishBlue);
+    cursor: pointer;
+}
+/* end hero section all */
+/* hero section responsib */
+@media screen and (max-width:800px) {
+    .head-container{
+        height: 600px;
+        width: 100%;
+    }
+    .hero-btn2{
+        margin:5px 10px;
+        padding:8px 40px;
+       
+    }
+    .hero-btn{
+        margin:5px 10px;
+        padding:8px 40px;
+    }
+}
+@media screen and (max-width:452px) {
+    /* hero heading */
+    .hero-heading{
+        height: 110px;
+        width: 100%;
+    }
+    .main-heading{
+        font-size:2.2rem;
+    }
+    /* heading paragrap */
+    .hero-paragrap-container{
+        height: 100px;
+        width: 100%;
+    }
+    .head-container{
+        height: 800px;
+        width: 100%;
+    }
+    .main-heading-paragrap{
+        font-size: 1.1rem;
+        color:rgba(17, 16, 16, 0.336);
+    }
+    .doundode-button-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-btn2{
+        margin:5px 10px;
+        height: 50px;
+        width: 80%;
+    }
+    .hero-btn{
+        margin:5px 10px;
+        height: 50px;
+        width: 80%;
+    }
+    .wrap-paragrap{
+        width: 97%;
+    }
+}
+/* start content section */
+.hero-top-paragrap-container{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-top-paragrap-container2{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.wrap-top-parapgrap-text{
+    width: 600px;
+    text-align: center;
+}
+.content-paragrap1{
+    text-align: center;
+}
+/* subject section */
+@media screen and (max-width:480px) {
+    .hero-top-paragrap-container{
+        width: 100%;
+        height: 100px;
+    }
+    .hero-top-paragrap-container2{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* end subject header responsib */
+
+.our-product-subject-continer{
+    height:600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subject-content-left{
+    width: 45%;
+    height: 500px;
+}
+.subject-content-right{
+    width: 45%;
+    height: 500px;
+}
+.computer-image{
+    height: 500px;
+    width: 100%;
+}
+/* right paragrap */
+.subject-content-1{
+    height: 90px;
+    width:400px;
+    margin-top:24px;
+}
+.subject-text{
+    color:black;
+    color: rgba(17, 16, 16, 0.336);
+    font-size:1rem;
+    line-height:29px;
+    margin-top:10px;
+}
+/* responsib */
+@media screen and (max-width:768px) {
+    .our-product-subject-continer{
+        width: 100%;
+        height: 700px;
+        flex-direction: column;
+    }
+    .subject-content-left{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    .computer-image{
+        height: 250px;
+        width: 90%;
+    }
+    .subject-content-right{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subject-content-1{
+       text-align: center;
+       height: 70px;
+       width: 78%;
+       margin-top:70px;
+    }
+}
+/* end all subjects container */
+/* start add section */
+.add-protion-add-prevew-container{
+    height: 650px;
+    width: 100%;
+}
+.top-add-head-container{
+    margin-top:100px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.wrap-content{
+    width: 500px;
+    height: 100px;
+    text-align: center;
+}
+.bottom-container{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.add-paragrap{
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.5);
+}
+.devicees-img{
+    height: 500px;
+    width: 60%;
+}
+@media screen and (max-width:558px) {
+    .add-protion-add-prevew-container{
+        height: 500px;
+        width: 100%;
+    }
+    .top-add-head-container{
+        width: 100%;
+        height: 200px;
+    }
+    .add-paragrap{
+        font-size: 1.1rem;
+    }
+    .devicees-img{
+        height: 280px;
+        width: 93%;
+    }
+}
+/* end add device section */
+/* start product heading content  */
+.main-product-container{
+    width: 100%;
+    height: 700px;
+}
+.product-paragrap-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.wrap-procuct-paragrap{
+    width: 50%;
+    height: 100px;
+    text-align: center;
+}
+.product-paragrap{
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.5);
+}
+.product-paragrap-head{
+    font-size: 2.4rem;
+}
+@media screen and (max-width:768px) {
+    .main-product-container{
+        width: 100%;
+        height: 700px;
+    }
+    .product-paragrap-container{
+        width: 100%;
+        height: 140px;
+    }
+    .wrap-procuct-paragrap{
+        width: 90%;
+        height: 100px;
+    }
+    .product-paragrap{
+        font-size: 1rem;
+    }
+    .product-paragrap-head{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+}
+/* end product heading content */
+/* start card content */
+.card-container{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card1{
+    width: 23%;
+    height: 200px;
+}
+/* this is card image */
+.card-image-container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.card-img{
+    width: 50px;
+    height: 50px;
+}
+/* end card image */
+/* card text */
+.card-text{
+    text-align: center;
+    width: 300px;
+}
+.para-content{
+    width: 300px;
+}
+.card-paragrap{
+    margin-top: 20px;
+    color:rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width:788px) {
+    .card-container{
+        width: 100%;
+        height: 650px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card1{
+        width: 100%;
+        height: 200px;
+        margin-top: 30px;
+    }
+    .card-text{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* end card text  */
+
+/* end card content  */
+
+.card-container2{
+    margin-top:100px;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card2{
+    width: 23%;
+    height: 200px;
+}
+@media screen and (max-width:788px) {
+    .card2{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.goolge-img{
+    width: 120px;
+    height: 42px;
+}
+.microsofft-img{
+    width: 150px;
+    height: 42px;
+}
+.dounlode-container-2{
+    width: 100%;
+    height: 400px;
+}
+@media screen and (max-width:788px) {
+    .card-container2{
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+        justify-self: center;
+    }
+}
+
+/* end card all section */
+/* start footer section */
+.foot-main-container{
+    height: 130px;
+    width: 100%;
+    background-color: #e4e4e4a4;
+    display: flex;
+    justify-content: center;
+}
+/* dounlode container */
+.hero-heading2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/* end doundode-contaiener  */
+/* foot left start  */
+.foot-left{
+    width: 70%;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo-foot{
+    width: 25%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-foot{
+    width: 25%;
+    height: 120px;
+}
+.foot-logo-img{
+    height: 30px;
+    width: 30px;
+}
+/* foot list */
+.list-foot ul{
+    margin-top:30px;
+}
+.list-foot ul li{
+    margin-top:20px;
+    list-style: none;
+}
+.list-foot ul li a{
+    text-decoration:none;
+    color:var(--DarkGrayishBlue);
+    font-size: 1.15rem;
+    font-weight:500;
+}
+.list-foot ul li a:hover{
+  color:var(--StrongCyan);
+}
+/* foot left end  */
+.foot-right{
+    width: 20%;
+    height: 130px;
+}
+.foot-icons{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-1{
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+    font-size: 1.4rem;
+}
+.icon-1:hover{
+    color:var(--StrongCyan);
+}
+/* end footer section  */
+@media screen and (max-width:768px) {
+    .foot-main-container{
+        height: 500px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .logo-foot{
+        width: 100%;
+        height: 200px;
+    }
+    .foot-left{
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+    }
+    .foot-right{
+        width: 100%;
+        height: 130px;
+    }
+    .foot-icons{
+        height: 200px;
+        width: 91%;
+        margin-left:24px;
+    }
+    .list-foot{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+    }
+    .list-foot ul li{
+      width: 180px;
+      text-align: center;
+    }
+}
